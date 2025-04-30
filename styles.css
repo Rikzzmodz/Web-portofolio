@@ -35,35 +35,45 @@ header p {
   margin-bottom: 20px;
 }
 
-/* Styling untuk tombol navigasi di header (About, FAQ, Medsos) */
-.nav-button {
-    background-color: transparent; /* Transparan background */
-    color: #fff; /* Warna teks putih */
-    font-size: 1.1rem; /* Ukuran teks */
-    padding: 10px 20px; /* Padding agar tombol cukup besar */
-    border: 2px solid #fff; /* Border putih */
-    border-radius: 50px; /* Membuat sudut tombol bulat */
-    cursor: pointer;
-    text-transform: uppercase; /* Membuat teks jadi kapital semua */
-    font-weight: bold; /* Memberi ketebalan pada teks */
-    transition: all 0.3s ease-in-out; /* Efek transisi halus */
-    display: inline-block; /* Untuk tombol berdampingan */
-    margin: 0 10px; /* Memberi jarak antar tombol */
+/* Styling untuk tombol navigasi bulat dengan ikon */
+.nav-buttons {
+    display: flex; /* Agar tombol berjajar horizontal */
+    justify-content: center; /* Menyusun tombol di tengah */
+    gap: 20px; /* Jarak antar tombol */
+    padding: 20px 0; /* Spasi atas dan bawah */
 }
 
-/* Efek saat hover pada tombol */
+.nav-button {
+    width: 60px; /* Lebar tombol */
+    height: 60px; /* Tinggi tombol */
+    border-radius: 50%; /* Bentuk bulat */
+    background-color: #333; /* Background gelap */
+    color: #fff; /* Teks putih */
+    display: flex; /* Flex untuk menyusun ikon di tengah */
+    justify-content: center; /* Memposisikan ikon di tengah */
+    align-items: center; /* Memastikan ikon tetap terpusat */
+    font-size: 24px; /* Ukuran ikon */
+    border: none; /* Menghilangkan border */
+    cursor: pointer; /* Menunjukkan bahwa tombol bisa diklik */
+    transition: all 0.3s ease; /* Efek transisi halus */
+}
+
+.nav-button i {
+    font-size: 30px; /* Ukuran ikon */
+    transition: transform 0.3s ease; /* Efek geser ikon saat hover */
+}
+
+/* Efek saat tombol di-hover */
 .nav-button:hover {
-    background-color: #f0b400; /* Warna latar belakang kuning terang */
-    color: #1a1a1a; /* Ubah warna teks menjadi gelap */
+    background-color: #f0b400; /* Warna latar belakang kuning */
     transform: scale(1.1); /* Membesarkan tombol saat hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Memberikan bayangan */
 }
 
-/* Animasi tombol saat di-hover */
 .nav-button:hover i {
     transform: translateX(5px); /* Geser ikon sedikit ke kanan */
-    transition: transform 0.3s ease-in-out;
 }
+
 
 #produc {
   text-align: center;
