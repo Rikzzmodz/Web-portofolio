@@ -1,231 +1,116 @@
-/* Reset Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #fff;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  overflow-x: hidden;
 }
 
-/* Header */
-.header {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #1a1a1a;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+  color: #00ffd5;
 }
 
-.header img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+  color: #00ffd5;
 }
 
-.header h1 {
-    font-size: 2.5rem;
-    margin: 10px 0;
-}
-
-.header p {
-    font-size: 1.2rem;
-    color: #ccc;
-}
-
-.header nav {
-    margin-top: 20px;
-}
-
-.header nav a {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.header nav a:hover {
-    background-color: #0056b3;
-}
-
-/* Produk Section */
 #produc {
-    padding: 50px 20px;
-    background-color: #1a1a1a;
-    text-align: center;
+  padding: 20px;
 }
 
-#produc h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
-/* Carousel Produk Container */
 .project-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 20px 0;
-    margin-bottom: 30px;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+  gap: 20px;
 }
 
 .produk {
-    background-color: #222;
-    border-radius: 10px;
-    padding: 20px;
-    width: 280px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    flex-shrink: 0;
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-left: 4px solid #00ffd5;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  color: white;
 }
 
 .produk img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .produk h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #00ffd5;
 }
 
 .produk ul {
-    list-style: none;
-    margin-bottom: 15px;
-    padding-left: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .produk ul li {
-    margin-bottom: 5px;
-    font-size: 1rem;
+  margin-bottom: 4px;
 }
 
 .produk p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+  margin: 10px 0;
+  font-weight: bold;
 }
 
 .produk a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  background: #00ffd5;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .produk a:hover {
-    background-color: #218838;
+  background: #00c6a7;
 }
 
-.produk:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Carousel Controls */
 .carousel-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+  text-align: center;
+  margin-top: 10px;
 }
 
 .carousel-controls button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background: rgba(255, 255, 255, 0.1);
+  color: #00ffd5;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .carousel-controls button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  background: #00ffd5;
+  color: #000;
 }
 
-.carousel-controls button:disabled {
-    background-color: #777;
-    cursor: not-allowed;
-}
-
-/* Footer */
 footer {
-    background-color: #222;
-    color: #aaa;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Back to Top Button */
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-    transition: background-color 0.3s;
-}
-
-.back-to-top:hover {
-    background-color: #0056b3;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .project-container {
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .produk {
-        width: 300px;
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header h1 {
-        font-size: 2rem;
-    }
-
-    .header p {
-        font-size: 1rem;
-    }
-
-    .produk h2 {
-        font-size: 1.6rem;
-    }
-
-    .produk p {
-        font-size: 1rem;
-    }
-
-    .carousel-controls button {
-        font-size: 1.2rem;
-    }
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #bbb;
 }
