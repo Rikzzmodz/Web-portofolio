@@ -13,17 +13,6 @@ body {
     line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h1, h2 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 /* Header */
 .header {
     text-align: center;
@@ -77,20 +66,25 @@ h1, h2 {
     margin-bottom: 30px;
 }
 
+/* Carousel Produk Container */
 .project-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    margin-bottom: 30px;
 }
 
 .produk {
     background-color: #222;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 280px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    flex-shrink: 0;
 }
 
 .produk img {
@@ -138,22 +132,29 @@ h1, h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Carousel Controls */
 .carousel-controls {
-    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
 }
 
 .carousel-controls button {
-    padding: 10px;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
     font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .carousel-controls button:hover {
-    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-controls button:disabled {
@@ -196,12 +197,13 @@ footer p {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .project-container {
-        flex-direction: column;
-        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .produk {
-        width: 80%;
+        width: 300px;
         margin-bottom: 30px;
     }
 }
