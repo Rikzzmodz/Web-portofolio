@@ -1,116 +1,144 @@
+:root {
+  --primary-color: #00ffd5;
+  --background-gradient: linear-gradient(135deg, #1f1c2c, #928dab);
+  --text-light: #ffffff;
+  --text-muted: #bbb;
+  --card-bg: rgba(255, 255, 255, 0.05);
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-  color: #fff;
+  background: var(--background-gradient);
+  color: var(--text-light);
   overflow-x: hidden;
 }
 
 header {
   text-align: center;
-  padding: 30px 20px 10px;
-  color: #00ffd5;
+  padding: 40px 20px 20px;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 2em;
-  color: #00ffd5;
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin: 10px 0;
+}
+
+header p {
+  margin-bottom: 20px;
+}
+
+.nav-buttons a {
+  margin: 0 10px;
+  padding: 10px 18px;
+  background: var(--card-bg);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.nav-buttons a:hover {
+  background: var(--primary-color);
+  color: #000;
 }
 
 #produc {
-  padding: 20px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#produc h1 {
+  font-size: 2.2em;
+  color: var(--primary-color);
+  margin-bottom: 30px;
 }
 
 .project-container {
   display: flex;
   overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 20px 10px;
   gap: 20px;
+  padding: 10px 20px;
+  scroll-behavior: smooth;
 }
 
 .produk {
   flex: 0 0 auto;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  border-left: 4px solid #00ffd5;
-  border-radius: 10px;
+  background: var(--card-bg);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 250px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  padding: 15px;
-  width: 250px;
-  text-align: center;
-  color: white;
+  backdrop-filter: blur(10px);
 }
 
 .produk img {
   width: 100%;
-  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
   margin-bottom: 10px;
 }
 
 .produk h2 {
-  font-size: 1.2em;
-  color: #00ffd5;
+  font-size: 1.1em;
+  color: var(--primary-color);
 }
 
 .produk ul {
   padding: 0;
   list-style: none;
   font-size: 0.9em;
-  margin-bottom: 10px;
-  text-align: left;
+  margin: 10px 0;
 }
 
 .produk ul li {
-  margin-bottom: 4px;
+  margin: 5px 0;
 }
 
 .produk p {
-  margin: 10px 0;
   font-weight: bold;
 }
 
 .produk a {
-  background: #00ffd5;
-  color: #000;
-  padding: 8px 16px;
-  border-radius: 6px;
-  text-decoration: none;
   display: inline-block;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.produk a:hover {
-  background: #00c6a7;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: var(--primary-color);
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .carousel-controls {
+  margin-top: 20px;
   text-align: center;
-  margin-top: 10px;
 }
 
 .carousel-controls button {
-  background: rgba(255, 255, 255, 0.1);
-  color: #00ffd5;
-  border: none;
-  padding: 10px 15px;
-  margin: 0 10px;
-  border-radius: 50%;
+  background: var(--card-bg);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin: 0 5px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.carousel-controls button:hover {
-  background: #00ffd5;
-  color: #000;
 }
 
 footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
-  color: #bbb;
+  color: var(--text-muted);
 }
