@@ -74,6 +74,24 @@ header p {
     transform: translateX(5px); /* Geser ikon sedikit ke kanan */
 }
 
+.nav-button-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-label {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-button-link:hover .nav-label {
+    color: #f0b400;
+}
 
 #produc {
   text-align: center;
