@@ -35,20 +35,34 @@ header p {
   margin-bottom: 20px;
 }
 
-.nav-buttons a {
-  margin: 0 10px;
-  padding: 10px 18px;
-  background: var(--card-bg);
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
-  text-decoration: none;
-  color: var(--text-light);
-  transition: 0.3s;
+/* Styling untuk tombol navigasi di header (About, FAQ, Medsos) */
+.nav-button {
+    background-color: transparent; /* Transparan background */
+    color: #fff; /* Warna teks putih */
+    font-size: 1.1rem; /* Ukuran teks */
+    padding: 10px 20px; /* Padding agar tombol cukup besar */
+    border: 2px solid #fff; /* Border putih */
+    border-radius: 50px; /* Membuat sudut tombol bulat */
+    cursor: pointer;
+    text-transform: uppercase; /* Membuat teks jadi kapital semua */
+    font-weight: bold; /* Memberi ketebalan pada teks */
+    transition: all 0.3s ease-in-out; /* Efek transisi halus */
+    display: inline-block; /* Untuk tombol berdampingan */
+    margin: 0 10px; /* Memberi jarak antar tombol */
 }
 
-.nav-buttons a:hover {
-  background: var(--primary-color);
-  color: #000;
+/* Efek saat hover pada tombol */
+.nav-button:hover {
+    background-color: #f0b400; /* Warna latar belakang kuning terang */
+    color: #1a1a1a; /* Ubah warna teks menjadi gelap */
+    transform: scale(1.1); /* Membesarkan tombol saat hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Memberikan bayangan */
+}
+
+/* Animasi tombol saat di-hover */
+.nav-button:hover i {
+    transform: translateX(5px); /* Geser ikon sedikit ke kanan */
+    transition: transform 0.3s ease-in-out;
 }
 
 #produc {
