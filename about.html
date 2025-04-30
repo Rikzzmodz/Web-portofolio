@@ -1,21 +1,96 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="PediakuHosting" />
-    <meta property="og:description" content="Solusi hosting cepat, aman, dan siap mendukung kebutuhan Anda." />
-    <meta property="og:type" content="website" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="PediakuHosting" />
+  <meta property="og:description" content="Solusi hosting cepat, aman, dan siap mendukung kebutuhan Anda." />
+  <meta property="og:type" content="website" />
+  <title>CloudHostPedia</title>
+  <link rel="icon" href="https://files.catbox.moe/5khlo6.jpg" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
 
-    <title>CloudHostPedia</title>
-    <link rel="icon" type="image/jpg" sizes="32x32" href="https://files.catbox.moe/5khlo6.jpg">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel= "stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 2.5em;
+      color: #00ffd5;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      line-height: 1.7;
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #00ffd5;
+      border-radius: 8px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .icon {
+      color: #00ffd5;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+  </style>
 </head>
 <body>
-     <h2><i class="fas fa-info-circle"></i> Tentang Jexploit</h2>
-        <p>Jexploit adalah penyedia layanan hosting yang berkomitmen untuk memberikan layanan terbaik kepada pelanggan kami. Kami menawarkan berbagai paket hosting yang sesuai dengan kebutuhan Anda, baik untuk keperluan pribadi maupun bisnis.</p>
-        <p>Dengan pengalaman bertahun-tahun di industri hosting, kami memahami pentingnya keandalan, kecepatan, dan keamanan untuk website Anda. Server kami dilengkapi dengan teknologi terbaru dan sistem keamanan yang kuat untuk memastikan website Anda selalu online dan terlindungi.</p>
-        <p>Dengan dukungan teknis 24/7 dan harga yang terjangkau, kami siap membantu Anda membangun dan mengelola website Anda dengan mudah dan efisien. Kepuasan pelanggan adalah prioritas utama kami, dan kami berkomitmen untuk memberikan pelayanan terbaik untuk setiap pelanggan.</p>
+  <h2 class="animate__animated animate__fadeInDown"><i class="fas fa-info-circle icon"></i> Tentang Jexploit</h2>
+
+  <p class="animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+    Jexploit adalah penyedia layanan hosting yang berkomitmen untuk memberikan layanan terbaik kepada pelanggan kami. Kami menawarkan berbagai paket hosting yang sesuai dengan kebutuhan Anda, baik untuk keperluan pribadi maupun bisnis.
+  </p>
+  <p class="animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+    Dengan pengalaman bertahun-tahun di industri hosting, kami memahami pentingnya keandalan, kecepatan, dan keamanan untuk website Anda. Server kami dilengkapi dengan teknologi terbaru dan sistem keamanan yang kuat untuk memastikan website Anda selalu online dan terlindungi.
+  </p>
+  <p class="animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+    Dengan dukungan teknis 24/7 dan harga yang terjangkau, kami siap membantu Anda membangun dan mengelola website Anda dengan mudah dan efisien. Kepuasan pelanggan adalah prioritas utama kami, dan kami berkomitmen untuk memberikan pelayanan terbaik untuk setiap pelanggan.
+  </p>
+
+  <footer class="animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+    &copy; 2025 Jexploit Hosting. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('p', {
+      delay: 200,
+      duration: 1000,
+      easing: 'ease-out',
+      origin: 'bottom',
+      distance: '50px'
+    });
+  </script>
 </body>
 </html>
