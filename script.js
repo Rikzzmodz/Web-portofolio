@@ -31,7 +31,7 @@
     document.getElementById('telegramButton').onclick = function() {
         window.open('https://t.me/rujekaciw', '_blank');
     };
-//chanell:https://whatsapp.com/channel/0029VanrndJICVfcrjFr3x2R//
+
     document.getElementById('tiktokButton').onclick = function() {
         window.open('https://youtube.com/@zxruzx', '_blank');
     };
