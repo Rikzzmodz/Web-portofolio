@@ -1,4 +1,3 @@
-
         :root {
             --primary: #4c51bf;
             --primary-dark: #434190;
@@ -331,45 +330,6 @@
             margin: 0 auto;
             font-size: 1.1rem;
             line-height: 1.7;
-        }
-        
-        
-        .faq, .about {
-            background: linear-gradient(145deg, #323b4d, #2a3241);
-            border-radius: 1rem;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-            padding: 2.5rem;
-            max-width: 900px;
-            margin: 3rem auto;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .faq h2, .about h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-            color: white;
-        }
-        
-        .faq ul {
-            list-style-type: none;
-        }
-        
-        .faq ul li {
-            margin-bottom: 1.5rem;
-        }
-        
-        .faq ul li strong {
-            color: var(--secondary);
-            display: block;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .about p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
         }
         
         /* Footer */
