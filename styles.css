@@ -155,14 +155,22 @@ header p {
 }
 
 .produk ul {
-  padding: 0;
-  list-style: none;
-  font-size: 0.9em;
-  margin: 10px 0;
+  list-style-type: none;
+  margin-bottom: 1.5rem;
 }
-
+        
 .produk ul li {
-  margin: 5px 0;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+        
+.produk ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--secondary);
+  font-weight: bold;
 }
 
 .produk p {
