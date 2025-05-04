@@ -155,23 +155,27 @@ header p {
 }
 
 .produk ul {
-  list-style-type: none;
-  margin-bottom: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
 }
-        
+
 .produk ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px; /* jarak antara ikon dan teks */
   margin-bottom: 0.5rem;
-  position: relative;
-  padding-left: 1.5rem;
+  color: #fff;
+  font-size: 0.95em;
 }
-        
+
 .produk ul li::before {
   content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--secondary);
+  color: var(--primary-color);
   font-weight: bold;
+  flex-shrink: 0;
 }
+
 
 .produk p {
   font-weight: bold;
